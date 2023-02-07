@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.e-obce.sk	TRUE	/	FALSE	1999999999	PHPSESSID	adeef83f29b7f778c481d033ab90f0d9
+

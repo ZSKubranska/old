@@ -1,0 +1,33 @@
+Instructions for adding Flash Games to your Website
+----------------------------------------------------------------
+
+
+1) First of all, please make sure that you have atleast the following files..
+
+1 x .html file
+1 x .swf or .dcr file
+4 x .gif/.jpg files used to advertise the game
+(Other files may include level data for certain games)
+
+
+2) Make a new folder on your website and call it the name of the game (or simply use the entire folder which these instructions text file is contained within).
+
+i) if you have decided to create a folder place both the .html file and .swf or .dcr files into this folder 
+ii) go to www.YourWebsite.com/game-folder/the-name-of-the-game.htm to test the game
+iii) change the look of the html page so it matches your website
+
+Note: the html file contains the important Object tag.  The .swf or .dcr file is the important game file.  The images are just for linking/describing the game
+
+
+Sign-up to our newsletter
+-------------------------
+
+
+Don't forget to signup to our 'Webmaster newsletter' so we can always send 
+you new games as soon as they are released, or simply keep coming back to 
+flashgames247.com to check for more free games for your website.
+
+
+Contact us at and we'll try and assist you with getting the games on your website.
+
+Email us: Admin@flashgames247.com

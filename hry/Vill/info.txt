@@ -1,0 +1,15 @@
+Village Car Race!
+
+Game Description:
+Compete in the races, earn money to buy new cars and upgrades, win the championship!
+
+Controls:
+Arrow Keys to drive.
+X to use Nitro
+Space to Jump
+
+Dimensions:
+720x480
+
+More games for your website:
+http://www.flashgames247.com/pages/freegames.html

@@ -1,0 +1,106 @@
+html{color:#fff;background-color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+body{
+    background: #000 url(../img/m_pozadi.png) left top repeat-x;
+    color: #fff;
+    font: 12px Arial;
+}
+
+div.wrapper {
+    margin: 0px;
+    width: 100%;
+    height: 60px;
+}
+
+div.wrapper div.section {
+    margin: 0px;
+    min-width: 200px;
+    height: 52px;
+    float: left;
+    line-height: 48px;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+div.wrapper div.section a {
+    color: #FFF;
+    font-size: 13px;
+    padding: 0 3px 2px 5px;
+}
+
+div.wrapper div.section a:hover {
+    text-decoration: none;
+}
+
+div.wrapper div.section a.title {
+    font-size: 19px;
+    padding-bottom: 0px;
+}
+
+div.wrapper img.logo
+{
+    float: right;
+}
+
+div.page {
+	margin: 0px auto;
+	width: auto;
+}
+
+div.page .control{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+div.page .control div div {
+  margin: 0px !important;
+  min-width: 26px;
+}
+
+div.page .control strong { display: block; margin: 5px; }
+
+div.page .control div {float:left;margin:5px;text-align: center;}
+div.page .control .o-backspace{
+    min-width:69px;padding: 28px 0 5px 0;background:url(../img/backspace.png) center top no-repeat;margin-top:30px;
+}
+div.page .control .o-enter{
+    min-width:54px;padding: 48px 0 5px 0;background:url(../img/enter.png) center top no-repeat;
+}
+div.page .control .o-mezernik{
+    min-width:143px;padding: 31px 0 5px 0;background:url(../img/mezernik.png) center top no-repeat;margin-top:19px;
+}
+div.page .control .o-mys-leva{
+    min-width:31px;padding: 64px 0 5px 0;background:url(../img/mys-leva.png) center top no-repeat;
+}
+div.page .control .o-mys-prava{
+    min-width:31px;padding: 63px 0 5px 0;background:url(../img/mys-prava.png) center top no-repeat;
+}
+div.page .control .o-mys-scrolling{
+    min-width:31px;padding: 64px 0 5px 0;background:url(../img/mys-scrolling.png) center top no-repeat;
+}
+div.page .control .o-mys-pohyb{
+    min-width:47px;padding: 64px 0 5px 0;background:url(../img/mys-pohyb.png) center top no-repeat;text-align: left;
+}
+div.page .control .o-shift{
+    min-width:67px;padding: 28px 0 5px 0;background:url(../img/shift.png) center top no-repeat;
+}
+div.page .control .o-sipky{
+    min-width:74px;padding: 48px 0 5px 0;background:url(../img/sipky.png) center top no-repeat;margin-top:15px;
+}
+div.page .control .o-wasd{
+    min-width:74px;padding: 48px 0 5px 0;background:url(../img/wasd.png) center top no-repeat;margin-top:15px;
+}
+
+div.page .control .o-prazdna-ctverec{
+    width: 100%; *width:26px;float:none;height:21px;margin-bottom:5px; padding-top:5px;background:url(../img/prazdna-ctverec.png) center top no-repeat; text-align: center; font-weight: bold; font-size: 14px; color: rgb(67,75,110);
+}
+div.page .control .o-prazdne-tlacitko{
+    min-width: 50px; width: 100%; *width:50px;float:none;height:23px;margin-bottom:5px;padding-top:5px;background:url(../img/prazdne-tlacitko.png) center top no-repeat; text-align: center; font-weight: bold; font-size: 14px; color: rgb(67,75,110);
+}
+div.page .control .o-prazdna-ctverec-text{
+    padding: 15px 0 0 0;margin:5px; text-align: center;
+}
+div.page .control .o-prazdne-tlacitko-text{
+    padding: 15px 0 0 0;margin:5px; text-align: center;
+}

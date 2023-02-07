@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<script language="JavaScript">
+<!-- hiding for old browsers
+	// response time test, created by Jasper van Zandbeek
+	// e-mail: jasperz@net-v.com
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+	document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+	bgChangeStarted=true;
+	startTime=new Date();
+}
+
+function remark(responseTime)
+{
+	var responseString="";
+	if (responseTime < 0.10)
+		responseString="Dobre!";
+	if (responseTime >= 0.10 && responseTime < 0.20)
+		responseString="Pekné!";
+	if (responseTime >=0.20 && responseTime < 0.30)
+		responseString="Skús by lepší...";
+	if (responseTime >=0.30 && responseTime < 0.60)
+		responseString="Dr sa!";
+	if (responseTime >=0.60 && responseTime < 1)
+		responseString="Èo si pil?";
+	if (responseTime >=1)
+		responseString="Zaspal si?";
+
+	return responseString;
+}
+
+function stopTest()
+{
+	if(bgChangeStarted)
+	{
+		endTime=new Date();
+		var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+		document.body.style.background="white";       
+		alert("Tvoja rıchlos reakcie: " + responseTime + " sekúnd " + "\n" + remark(responseTime));
+		startPressed=false;
+		bgChangeStarted=false;
+	}
+	else
+	{
+		if (!startPressed)
+		{
+			alert("Najskôr stlaè štart");
+		}
+		else
+		{       
+			clearTimeout(timerID);
+			startPressed=false;             
+			alert("Ty cheater! Dal si to moc skoro!");
+		}               
+	}
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+	randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+	return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+	if(startPressed)
+	{
+		alert("U si zaèal. Stlaè Stop pre stop");
+		return;
+	}
+	else
+	{
+		startPressed=true; 
+		timerID=setTimeout('startTest()', 6000*randNumber());
+	}
+}
+// --> 
+</script>
+<p>Test rıchlosti reakcie!</p>
+Klikni na "Štart" a èakaj na zmenu farby pozadia. Ak sa zmení stlaè "stop!"
+
+
+<form name="response">
+Zmeò farbu pozadia na: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="štart" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+</body>
+</html>
